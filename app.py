@@ -51,7 +51,7 @@ def create_app(test_config=None):
     
     @app.route('/')
     def home():
-        return render_templates('website/Home.html', user = current_user)
+        return render_template('website/Home.html', user = current_user)
     return app 
 
 
